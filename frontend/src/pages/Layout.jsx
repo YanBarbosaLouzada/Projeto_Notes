@@ -4,8 +4,8 @@ import Navbar from '../components/UI/Navbar'
 function Layout() {
   return (
     <div>
-      <Navbar/>
-      <Outlet/>
+      <Navbar />
+      <Outlet />
     </div>
   )
 }
