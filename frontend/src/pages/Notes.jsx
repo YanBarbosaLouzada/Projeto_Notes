@@ -10,7 +10,7 @@ function Notes() {
   const [notes,setNotes] = useState([])
 
   const pegarTodasAsNotesDaApi = ()=>{
-    axios.get('http://localhost:3001/notes')
+    axios.get('https://projeto-notes.onrender.com/notes')
       .then(res=>{
         // console.log(res)
         // console.log(res.data)
@@ -19,7 +19,7 @@ function Notes() {
   }
   
   const createNote = (title,description)=>{
-    axios.post('http://localhost:3001/notes/createNote',{title,description})    
+    axios.post('https://projeto-notes.onrender.com/notes/createNote',{title,description})    
     .then(res=>{
       // console.log(res)
       // console.log(res.data)
@@ -32,7 +32,7 @@ function Notes() {
     })
   }
   const deleteNote = (id)=>{
-    axios.delete(`http://localhost:3001/notes/deleteNote/${id}`)
+    axios.delete(`https://projeto-notes.onrender.com/notes/deleteNote/${id}`)
     .then(res=>{
       // console.log(res)
       // console.log(res.data)
@@ -42,7 +42,7 @@ function Notes() {
   }
 
   const editNote = (id,title,description)=>{
-    axios.put(`http://localhost:3001/notes/editNote/${id}`,{title,description})
+    axios.put(`https://projeto-notes.onrender.com/${id}`,{title,description})
     .then(res=>{
       // console.log(res)
       // console.log(res.data)
